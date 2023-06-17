@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* !!ADMIN CSS!! */
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(173, 172, 172);
+}
+
+body {
+    height: 100px;
+    background-image: linear-gradient(to right, #ebf8fa, #8fb5fa);
+}
+
+.topnav {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.topnav img {
+    padding: 5px;
+    margin-left: 15px;
+    height: 50px;
+}
+
+#last {
+    float: right;
+    padding: 10px;
+}
+
+#space {
+    padding: 20px;
+}
+
+.sidenav {
+    position: fixed;
+    width: 45px;
+    height: 100%;
+    background-color: white;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+    overflow: hidden;
+    border-right: 1px solid rgb(189, 189, 189);
+    z-index: 1;
+}
+
+.sidenav:hover {
+    width: 200px;
+}
+
+.sidenav li {
+    position: relative;
+    list-style-type: none;
+    padding: 10px;
+    left: 35px;
+}
+
+.sidenav i {
+    position: fixed;
+    left: 15px;
+}
+
+.sidenav img {
+    padding: 10px;
+}
+
+a:hover {
+    color: #8fb5fa;
+}
+
+.sidenav a.active {
+    color: #8fb5fa;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 300px) {
+    .sidenav {
+        font-size: x-small;
+    }
+    .topnav {
+        font-size: x-small;
+    }
+    .sidenav {
+        display: none;
+    }
+}

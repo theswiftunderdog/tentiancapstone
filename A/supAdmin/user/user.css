@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Poppins:ital,wght@0,300;1,200&family=Public+Sans:wght@300;400;500;600;700&family=Ysabeau:wght@200;300;400;500;600;700&display=swap');
+
+/* this is for usernav !NOT FOR USER.PHP! */
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #ebf8fa, #9ec0ff);
+}
+
+.nav {
+    width: 45px;
+    height: 100%;
+    background: white;
+    transition: width .5s;
+    position: fixed;
+    box-shadow: 1px 0px 3px #edeff2;
+    float: left;
+    overflow: hidden;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.nav ul {
+    list-style-type: none;
+    position: absolute;
+    top: 80px;
+    padding-left: 1px;
+    width: 90%;
+}
+
+.nav a {
+    margin: 1px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.nav li {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.nav:hover {
+    width: 200px;
+}
+
+.bod {
+    padding-left: 100px;
+    font-size: 9px;
+}
+
+.nav i {
+    padding-left: 1px;
+    position: fixed;
+}
+
+.nav img {
+    width: 45px;
+    margin: 5px;
+}
+
+.logo h3 {
+    position: absolute;
+    bottom: 46.7em;
+    font-size: 20px;
+    padding-left: 70px;
+}
+
+.nav li:hover {
+    background-color: whitesmoke;
+    border-radius: 10%;
+}
+
+.last {
+    position: relative;
+    top: 200px;
+}
+
+.container {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+    .red {
+        background-color: red;
+        width: 10cm;
+        height: 70em;
+        position: relative;
+        right: 50px;
+    }
+}

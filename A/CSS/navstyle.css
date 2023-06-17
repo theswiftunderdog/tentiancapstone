@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Poppins:ital,wght@0,300;1,200&family=Public+Sans:wght@300;400;500;600;700&family=Ysabeau:wght@200;300;400;500;600;700&display=swap');
+
+/* !!ADMIN CSS!! */
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100px;
+    background-image: linear-gradient(to right, #ebf8fa, #8fb5fa);
+}
+
+.nav {
+    width: 70px;
+    height: 100%;
+    background: white;
+    transition: width .5s;
+    position: fixed;    
+    box-shadow: 1px 0px 3px #edeff2;
+    float: left;
+    overflow: hidden;
+    transition-duration: 0.1s;
+    z-index: 1;
+}
+
+.nav ul {
+    list-style-type: none;
+    position: absolute;
+    top: 115px;
+    padding-left: 1px;
+    width: 90%;
+}
+
+.nav a {
+    padding-left: 72px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    line-height: 37px;
+}
+
+.nav li {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.nav ul li p{
+    display: none;
+}
+
+.nav:hover {
+    width: 300px;
+}
+
+.nav:hover ul li p{
+    display: inline-block;
+    position:fixed;
+}
+
+.nav span{
+    display: none;
+    
+}
+
+.nav:hover span{
+    display: inline-block;
+    position: fixed;
+    margin-top: 23px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav i {
+    padding-left: 7px;
+    position: fixed;
+    font-size: 25px;
+    color: #2D1255;
+}
+
+.nav img {
+    width: 36px;
+    margin: 5px;
+    width: 42px;
+    margin-left: 14px;
+    margin-top: 14px;
+}
+
+.nav img:hover{
+    left: 200px;
+}
+
+.logo h3 {
+    font-size: 20px;
+    padding-left: 122.5px;
+    padding-top: 10px;   
+    text-transform: uppercase;
+}
+
+
+
+.nav li:hover {
+    background-color: rgb(167, 198, 255);
+    padding-right: 325px;
+}
+
+.last {
+    position: relative;
+    top: 200px;
+}
+
+.container {
+    display: flex;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 300px) {
+    .red {
+        background-color: red;
+        width: 10cm;
+        height: 70em;
+        position: relative;
+        right: 50px;
+    }
+}
+
+/*Place Order Page*/
+
+.contact-form{
+    margin-top: 75px;
+    margin-left: 28%;
+    border: 2px solid rgba(0, 0, 0, 0.514);
+    padding: 50px 0px;
+    background-color: rgba(245, 245, 245, 0.514);
+    border-radius: 1%;
+    text-align: center;
+    width: 50%;
+}
+
+.form-group{
+    margin-top: -20px;
+    color: #2D1255;
+}
+
+.form-group h3{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.orderbody{
+    padding: 0px;
+    margin: 0px;
+}
+
+.orderInputsContainer{
+    margin: 25px;
+    left: 0;
+}
+
+.orderInputsContainer input{
+    width: 100%;
+    font-size: 20px;
+}
+
+.orderInputsContainer ::placeholder{
+    margin-left: 250px;
+}
+
+.quansel{
+    position: relative;
+    left: 0px;
+}
+
+.orderType{
+    text-align: left;
+    font-size: 18px;
+    color: #767676;
+    font-family: 'Titillium Web', sans-serif;
+    width: 595px;
+}
+
+.orderType option{
+    text-align: left;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.form-border label{ 
+    padding-right: 346px;
+}
+
+.form-border p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.form-border ::placeholder{
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.form-border input{
+    font-size: small;
+    padding: 5px 10px;
+}
+
+.orderbutton{
+    text-align: center;
+    margin-top: 25px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.orderbutton button{
+    font-size: 30px;
+    padding: 5px 50px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #2D1255;
+    border: 2px solid rgba(0, 0, 0, 0.514);
+    border-radius: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 5px;
+    transition: .5s;
+    background: white;
+}
+
+.orderbutton:hover button{
+    background: #2D1255;
+    color: white;
+    transition: .3s;
+    transform-origin:bottom;
+}
+
+/*Order Details CSS*/
+
+.box1{
+    position: fixed;
+}
+
+.box1 h1{
+    margin-left: 550px;
+    margin-top: 25px;
+}
+
+.tables{
+    padding: 25px;
+    width: 100%;
+    line-height: 30px;
+}
+
+td, th{
+    border: 1px solid #000000;
+}
+
+tr:nth-child(even) {
+    background-color: #d3d3d3;
+}
+
+.order-table {
+    margin-top: 100px;
+    width: 100%;
+}
+
+/*Profile CSS*/
+
+.account-header{
+    background-color: #4062BB;
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.user-image {
+    display: inline-block;
+    margin-left: 500px;
+}
+
+.user-image h2 {
+    display: inline-block;
+    margin-left: 150px;
+    color: #fff;
+    justify-content: center;
+    border: 1px solid #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+.account-body{
+    margin-left: 400px;
+}
+
+.account-forms{
+    display: grid;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    width: 75%;
+}
+
+.account-forms label{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    color: #2D1255;
+}
+
+.account-forms input{
+    border: 1px solid #ffffff00
+}
+
+.account-button {
+    text-align: right;
+    margin-right: 370px;
+    margin-top: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 23px;
+    transition: 1s;
+}
+
+.button-design{
+    padding: 0px 10px;
+    margin-left: 10px;
+    color: #4062BB;
+    background-color: #fff;
+    border: 1px solid #ffffff00
+}
+
+.button-design:hover{
+    transition: .5s;
+    color: #fff;
+    background-color: #4062BB;
+}
+
